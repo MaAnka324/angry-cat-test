@@ -1,0 +1,14 @@
+:root {
+  /* colors */
+  --color-bg: #ffffff;
+  --color-text: #111111;
+  --color-muted: #6b7280;
+  --color-yellow: #f5b400;
+
+  /* layout */
+  --container-width: 1200px;
+  --radius-lg: 24px;
+
+  /* typography */
+  --font-main: 'Inter', sans-serif;
+}
