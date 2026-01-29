@@ -4,7 +4,7 @@
   <main>
     <HeroSection />
     <StatsCard />
-  </main>
+  </main> 
 </template>
 
 <script setup>
