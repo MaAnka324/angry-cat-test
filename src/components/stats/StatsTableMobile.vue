@@ -45,10 +45,12 @@ defineProps({
 }
 .mobile-table__card {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.04);
-  padding: 16px 12px;
-  border: 1px solid #f3f3f3;
+  padding: 16px 5px;
+}
+
+.mobile-table__card + .mobile-table__card {
+  border-top: 1px solid #ececec;
+  margin-top: 0;
 }
 .mobile-table__row {
   display: flex;
