@@ -123,10 +123,10 @@ const rows = [
   padding: 18px 0 18px 0;
 }
 .info-divider {
-  width: calc(100% + 64px);
+  width: 100%;
   height: 1px;
-  background: #ececec;
-  margin-left: -32px;
+  border-top: 1px solid #ececec;
+  margin: 0;
 }
 .card__table {
   margin-top: 8px;
