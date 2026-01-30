@@ -79,7 +79,7 @@ const rows = [
     padding: 16px 8px 16px 8px;
     border-radius: 12px;
     max-width: 100%;
-    margin: 0 0 16px 0;
+    margin: 0 10px 16px 10px;
   }
   .card__grid {
     flex-direction: column;
