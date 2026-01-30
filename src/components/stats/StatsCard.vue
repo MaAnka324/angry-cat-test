@@ -2,6 +2,23 @@
 import StatsTable from './StatsTable.vue'
 import binIcon from '@/assets/icons/bin.svg'
 import warningIcon from '@/assets/icons/warning.svg'
+import StatsTableMobile from './StatsTableMobile.vue'
+
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const isMobile = ref(false)
+
+function checkMobile() {
+  isMobile.value = window.innerWidth < 600
+}
+
+onMounted(() => {
+  checkMobile()
+  window.addEventListener('resize', checkMobile)
+})
+onUnmounted(() => {
+  window.removeEventListener('resize', checkMobile)
+})
 
 const rows = [
   { days: 17, daily: '0.5%', total: '31.7%', expected: '10 BIN', status: 'active' },
@@ -42,7 +59,7 @@ const rows = [
       </div>
     </div>
     <div class="card__table">
-      <StatsTable :rows="rows" />
+      <component :is="isMobile ? StatsTableMobile : StatsTable" :rows="rows" />
     </div>
   </section>
 </template>
@@ -56,6 +73,62 @@ const rows = [
   margin: 0 auto;
   border: 1px solid #E6E6E6;
 }
+
+@media (max-width: 600px) {
+  .card {
+    padding: 16px 8px 16px 8px;
+    border-radius: 12px;
+    max-width: 100%;
+    margin: 0 0 16px 0;
+  }
+  .card__grid {
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .card__main {
+    min-width: 0;
+  }
+  .card__label {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+  .card__total {
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  .card__total-value {
+    font-size: 2rem;
+    line-height: 2.2rem;
+  }
+  .card__warning {
+    font-size: 0.95rem;
+    gap: 6px;
+  }
+  .warning-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .card__info {
+    padding-left: 0;
+    border-left: none;
+    border-top: 1px solid #ececec;
+    padding-top: 12px;
+    min-width: 0;
+  }
+  .info-row {
+    font-size: 1rem;
+    padding: 12px 0 12px 0;
+  }
+  .card__table {
+    margin-top: 8px;
+  }
+}
+
 
 .card__grid {
   display: flex;
