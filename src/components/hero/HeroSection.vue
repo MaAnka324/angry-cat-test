@@ -119,4 +119,32 @@ import catImage from '@/assets/images/cat.png'
     min-width: 0;
   }
 }
+
+@media (max-width: 900px) {
+  .hero__content {
+    flex-direction: column;
+    gap: 24px;
+    padding: 24px 0 16px 0;
+  }
+  .hero__image-wrap {
+    order: -1;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+  .hero__image {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto;
+  }
+  .hero__text {
+    align-items: center;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .hero__button {
+    width: 100%;
+    max-width: 300px;
+  }
+}
 </style>
