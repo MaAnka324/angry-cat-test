@@ -43,7 +43,7 @@ const rows = [
       </div>
       <div class="card__info">
         <div class="info-row">
-          <span>Ребондировано</span>
+          <span>Ребондіровано</span>
           <span>10 BIN</span>
         </div>
         <div class="info-divider"></div>
