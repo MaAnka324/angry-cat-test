@@ -97,10 +97,6 @@ const rows = [
     gap: 12px;
     margin-bottom: 12px;
   }
-  .icon {
-    width: 40px;
-    height: 40px;
-  }
   .card__total-value {
     font-size: 2rem;
     line-height: 2.2rem;
