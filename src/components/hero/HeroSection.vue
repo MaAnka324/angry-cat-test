@@ -11,9 +11,7 @@
         </BaseButton>
       </div>
       <div class="hero__image-wrap">
-        <div class="hero__circle">
-          <img :src="catImage" alt="cat" class="hero__image" />
-        </div>
+        <img :src="catImage" alt="cat" class="hero__image" />
       </div>
     </div>
   </section>
@@ -92,23 +90,12 @@ import catImage from '@/assets/images/cat.png'
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 320px;
-}
-
-.hero__circle {
-  background: #fdf6e3;
-  border-radius: 50%;
-  width: 260px;
-  height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 16px 0 rgba(245,180,0,0.07);
+  min-width: 360px;
 }
 
 .hero__image {
-  width: 180px;
-  height: 180px;
+  width: 360px;
+  height: 360px;
   object-fit: contain;
   display: block;
 }
