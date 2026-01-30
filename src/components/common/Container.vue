@@ -18,7 +18,7 @@ import HeroSection from '@/components/hero/HeroSection.vue'
 	background-image: url('@/assets/images/bg-pattern.svg');
 	background-repeat: no-repeat;
 	background-position: top center;
-	background-size: cover;
+	background-size: 200%;
 	margin-bottom: 40px;
 }
 .container {
