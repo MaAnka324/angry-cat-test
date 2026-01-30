@@ -13,18 +13,25 @@ defineProps({
 
 <style scoped>
 .badge {
-  padding: 6px 14px;
-  border-radius: 12px;
-  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 96px;
+  min-height: 42px;
+  padding: 0 16px;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  box-sizing: border-box;
 }
 
 .active {
-  background: #dff9ef;
-  color: #1ca37c;
+  background: #87FFDF;
+  color: #24A483;
 }
 
 .inactive {
-  background: #ffe3e3;
-  color: #ff4d4f;
+  background: #FFDDDB;
+  color: #FD2517;
 }
 </style>

@@ -1,14 +1,11 @@
 <template>
-  <AppHeader />
-
+  <Container />
   <main>
-    <HeroSection />
     <StatsCard />
-  </main>
+  </main> 
 </template>
 
 <script setup>
-import AppHeader from '@/components/layout/AppHeader.vue'
-import HeroSection from '@/components/hero/HeroSection.vue'
+import Container from '@/components/common/Container.vue'
 import StatsCard from '@/components/stats/StatsCard.vue'
 </script>

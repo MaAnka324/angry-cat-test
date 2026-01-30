@@ -38,11 +38,31 @@ defineProps({
 <style scoped>
 .table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  font-size: 1.08rem;
+  margin-top: 0;
 }
 
-th, td {
-  padding: 12px;
+th {
+  color: #888;
+  font-weight: 500;
+  background: #fff;
+  padding: 16px 12px 14px 0;
+  border-bottom: 2px solid #f3f3f3;
   text-align: left;
+}
+td {
+  color: #222;
+  background: #fff;
+  padding: 16px 12px 16px 0;
+  border-bottom: 1.5px solid #f3f3f3;
+  text-align: left;
+}
+tr:last-child td {
+  border-bottom: none;
 }
 </style>
