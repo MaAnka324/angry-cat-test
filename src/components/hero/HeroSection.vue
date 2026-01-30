@@ -44,9 +44,12 @@ import catImage from '@/assets/images/cat.png'
 }
 
 .hero__text h1 {
-  font-size: 3rem;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
-  line-height: 1.1;
+  font-style: bold;
+  font-size: 72px;
+  line-height: 72px;
+  letter-spacing: 0%;
   color: #222;
   margin-bottom: 12px;
 }
@@ -64,18 +67,26 @@ import catImage from '@/assets/images/cat.png'
 }
 
 .hero__button {
+  width: 300px;
+  height: 50px;
   background: #fff;
   color: #222;
-  font-size: 1.15rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.6rem;
   font-weight: 500;
   border-radius: 32px;
-  box-shadow: 0 4px 16px 0 rgba(34,34,34,0.10);
-  padding: 14px 36px 14px 28px;
-  border: none;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  border: 1px solid #F4F4F4;
   transition: box-shadow 0.2s;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 8px;
+  cursor: pointer;
+  margin-bottom: 0;
+  margin-top: 0;
+  outline: none;
+  box-sizing: border-box;
 }
 .hero__button:hover {
   box-shadow: 0 8px 24px 0 rgba(34,34,34,0.13);
