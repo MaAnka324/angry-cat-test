@@ -16,9 +16,7 @@ const rows = [
       <div class="card__main">
         <div class="card__label">Всього застекано</div>
         <div class="card__total">
-          <span class="card__total-icon-wrap">
-            <span class="card__total-bg"><img :src="binIcon" class="icon" /></span>
-          </span>
+          <img :src="binIcon" class="icon" />
           <span class="card__total-value">25 BIN</span>
         </div>
         <div class="card__warning">
@@ -31,10 +29,12 @@ const rows = [
           <span>Ребондировано</span>
           <span>10 BIN</span>
         </div>
+        <div class="info-divider"></div>
         <div class="info-row">
           <span>Продано BIN</span>
           <span>360 BIN</span>
         </div>
+        <div class="info-divider"></div>
         <div class="info-row">
           <span>Заклеймено BIN</span>
           <span>7660 BIN</span>
@@ -78,27 +78,17 @@ const rows = [
   gap: 18px;
   margin-bottom: 18px;
 }
-.card__total-icon-wrap {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.card__total-bg {
-  background: #fdf6e3;
-  border-radius: 50%;
-  width: 56px;
-  height: 56px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+
 .icon {
-  width: 32px;
-  height: 32px;
+  width: 64px;
+  height: 64  px;
 }
 .card__total-value {
-  font-size: 2.6rem;
+  font-family: 'Manrope', sans-serif;
   font-weight: 700;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: 0px;
   color: #222;
 }
 .card__warning {
@@ -109,6 +99,9 @@ const rows = [
   font-size: 1rem;
   margin-bottom: 0;
 }
+.card__warning span {
+  color: rgba(34, 34, 34, 0.5);
+}
 .warning-icon {
   width: 20px;
   height: 20px;
@@ -118,9 +111,8 @@ const rows = [
   min-width: 220px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 0;
   justify-content: flex-start;
-  border-left: 1.5px solid #ececec;
   padding-left: 32px;
 }
 .info-row {
@@ -128,6 +120,13 @@ const rows = [
   justify-content: space-between;
   font-size: 1.15rem;
   color: #222;
+  padding: 18px 0 18px 0;
+}
+.info-divider {
+  width: calc(100% + 64px);
+  height: 1px;
+  background: #ececec;
+  margin-left: -32px;
 }
 .card__table {
   margin-top: 8px;
