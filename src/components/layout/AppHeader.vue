@@ -5,10 +5,10 @@
         <span class="logo-black">C</span>
         <span class="logo-yellow">A</span>
         <span class="logo-yellow">n</span>
-        <span class="logo-cat">
-          🐱
+        <span class="logo-yellow logo-g-cat">
+          g
+          <img src="/src/assets/images/cat2.svg" alt="cat" class="cat-img" />
         </span>
-        <span class="logo-yellow">g</span>
         <span class="logo-yellow">r</span>
         <span class="logo-yellow">y</span>
         <span class="logo-black">T</span>
@@ -61,10 +61,19 @@
 .logo-yellow {
   color: #eac24b;
 }
-.logo-cat {
-  font-size: 1.3em;
-  margin: 0 0.05em;
-  vertical-align: middle;
+.logo-g-cat {
+  position: relative;
+  display: inline-block;
+}
+.cat-img {
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  transform: translate(-50%, -110%);
+  width: 7em;
+  height: auto;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .header-actions {
