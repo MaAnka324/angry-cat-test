@@ -51,11 +51,10 @@ const rows = [
 .card {
   background: #fff;
   border-radius: 20px;
-  box-shadow: 0 2px 16px 0 rgba(34,34,34,0.06);
   padding: 32px 32px 24px 32px;
   max-width: 900px;
   margin: 0 auto;
-  border: 1.5px solid #f3f3f3;
+  border: 1px solid #E6E6E6;
 }
 
 .card__grid {
