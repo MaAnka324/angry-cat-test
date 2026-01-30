@@ -62,6 +62,9 @@ import catImage from '@/assets/images/cat.png'
   font-size: 1.25rem;
   margin-bottom: 32px;
   margin-top: 0;
+  text-align: left;
+  width: 100%;
+  align-self: flex-start;
 }
 
 .hero__button {
@@ -141,6 +144,10 @@ import catImage from '@/assets/images/cat.png'
     align-items: center;
     min-width: 0;
     max-width: 100%;
+  }
+  .hero__subtitle {
+    text-align: left;
+    align-self: flex-start;
   }
   .hero__button {
     width: 100%;
