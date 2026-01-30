@@ -28,8 +28,6 @@ import catImage from '@/assets/images/cat.png'
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
   padding: 60px 0 40px 0;
 }
 

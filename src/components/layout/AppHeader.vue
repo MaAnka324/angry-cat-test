@@ -42,9 +42,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 32px 0 24px 0;
 }
 
 .logo {
